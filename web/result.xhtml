@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h1>JSF Hibernate</h1>
+<h:form>
+    Title: <h:inputText value="#{bookController.book.title}"/><br/>
+    Author: <h:inputText value="#{bookController.book.author}"/><br/>
+    Pages: <h:inputText value="#{bookController.book.pages}"/><br/>
+    Edition: <h:inputText value="#{bookController.book.evaluation}"/><br/>
+    ISBN: <h:inputText value="#{bookController.book.isbn}"/><br/>
+    Publisher: <h:inputText value="#{bookController.book.publisher}"/><br/>
+
+<h:commandButton action="#{bookController.addBook}" value="Add"/>
+<h:commandButton action="#{bookController.editBook}" value="Edit"/>
+<br/>
+<h:commandLink action="index" value="Voltar"/>
+</h:form>
+    </h:body>
+</html>
+

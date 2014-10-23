@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 22, 2014 3:20:46 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.sempra.model.Book" table="book" catalog="bookstore" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="author" type="string">
+            <column name="author" length="45" />
+        </property>
+        <property name="evaluation" type="string">
+            <column name="evaluation" length="45" />
+        </property>
+        <property name="publisher" type="string">
+            <column name="publisher" length="45" />
+        </property>
+        <property name="isbn" type="string">
+            <column name="isbn" length="45" />
+        </property>
+        <property name="pages" type="java.lang.Integer">
+            <column name="pages" />
+        </property>
+        <property name="title" type="string">
+            <column name="title" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>
